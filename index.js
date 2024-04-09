@@ -1,6 +1,24 @@
 const farmAnimals = 'cow horse sheep pig chicken';
 
+const[ moo, neigh, baa, oink, cluck ] = farmAnimals.split(' ')
+console.log(moo, neigh, baa, oink, cluck)
+
+const[bessie,   ,dolly,babe,little] = farmAnimals.split(' ');
+console.log(bessie, dolly, babe, little);
+
+const[blackAndWhite,   ,black,pink,  ] =farmAnimals.split(' ');
+console.log(blackAndWhite, black, pink);
+
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const[red, orange, yellow, green, blue, indigo, violet] = colors
+console.log(red, orange, yellow, blue, indigo, violet )
+
+const[r, o, y, g, b,  ,v]=colors
+console.log(r, o, y, g, b, v)
+
+const[,  , , , , indg, ,] = colors
+console.log(indg)
+
 
 const muppet = {
   muppetName: 'Miss Piggy',
@@ -9,6 +27,8 @@ const muppet = {
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+const{muppetName, color, song, job, partner} = muppet
+console.log(muppetName, color, song, job, partner)
 
 const nestedMuppet = {
   nestedName: 'Kermit',
@@ -24,6 +44,11 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+const{song2,song4} = nestedMuppet.album.theMuppetMovie
+console.log(song2, song4)
+
+const{nestedJob, nestedPartner } = nestedMuppet
+console.log(nestedJob, nestedPartner)
 
 // Strings
 
@@ -39,7 +64,7 @@ const nestedMuppet = {
 
 // 5. Some people have a really hard time picking out indigo, so let's leave that one out, using the first letter of each color as the variable names.
 
-// 6. But wait! Indigo is now feeling *super* left out. Let's only assign indigo using indg. 
+// 6. But wait! Indigo is now feeling super left out. Let's only assign indigo using indg. 
 
 // Objects
 
